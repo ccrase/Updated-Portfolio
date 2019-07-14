@@ -1,3 +1,53 @@
+body{
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+#contact-header{
+    font-family: 'Paytone One', sans-serif;
+    color: lightcoral !important;
+}
+hr{
+    background-color: lightgray;
+}
+.contact-info{
+    color: lightgray;
+    font-size: 18px;
+}
+/* contact buttons */
+.contact-link{
+    margin-top: 7px;
+    color: lightgray;
+    background: none;
+    border: 1px solid lightgray;
+
+}
+.contact-link:hover{
+    border: 1px solid salmon;
+}
+.jumbotron{
+    background: linear-gradient(#FFAA85, #B3315F)
+
+}
+/* jumbotron header */
+#jumbo-header{
+    font-family: 'Paytone One', sans-serif;
+    color:white;
+}
+/* jumbotron text */
+.lead{
+    color: white;
+}
 .card{
     text-align: center;
+}
+.card-title{
+    /* font-family: 'Paytone One', sans-serif; */
+    font-family: 'Fugaz One', cursive;
+    color: darkgrey;
+    font-size: 24px;
+}
+.card-title:hover{
+    color: rgb(90, 90, 90);
+}
+a{
+    text-decoration: none !important;
 }
