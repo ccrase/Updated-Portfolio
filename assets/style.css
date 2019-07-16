@@ -45,17 +45,18 @@ hr{
     color: salmon;
     font-size: 24px;
 }
-
+.card-title:hover{
+    font-size: 26px;
+}
 a{
     text-decoration: none !important;
 }
 .github-link{
     margin-bottom: 6px;
-    color: darkgray;
+    color: rgb(92, 91, 91);
     background: none;
-    border: 1px solid darkgray;
+    border: 1px solid rgb(92, 91, 91);
 }
 .github-link:hover{
     border: 1px solid salmon;
-    color: rgb(92, 91, 91);
 }
