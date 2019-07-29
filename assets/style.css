@@ -14,18 +14,20 @@ hr{
 }
 /* contact buttons */
 .contact-link{
-    margin-top: 7px;
-    color: lightgray;
+    margin: 5px 10px 5px 10px;
+    padding: 0px 5px 0px 5px;
+    color: black;
     background: none;
-    border: 1px solid lightgray;
+    border: 1px solid black;
 
 }
 .contact-link:hover{
     border: 1px solid salmon;
 }
 .jumbotron{
-    background: linear-gradient(#FFAA85, #B3315F)
-
+    background: black;
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 /* jumbotron header */
 #jumbo-header{
@@ -34,6 +36,14 @@ hr{
 }
 /* jumbotron text */
 .lead{
+    color: white;
+}
+.portfolio-filter{
+    margin: 5px 0 5px 0;
+    background-color: fuchsia;
+    padding: 10px;
+}
+.filter-icon{
     color: white;
 }
 .card{
@@ -59,4 +69,8 @@ a{
 }
 .github-link:hover{
     border: 1px solid salmon;
+}
+.icon{
+    padding: 0px 10px 20px 10px;
+    width: 60px;
 }
