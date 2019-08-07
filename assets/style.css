@@ -1,10 +1,8 @@
 body{
+    background-image: url(/assets/images/topography.png);
     font-family: 'Quattrocento Sans', sans-serif;
 }
-#contact-header{
-    font-family: 'Paytone One', sans-serif;
-    color: lightcoral !important;
-}
+/* contact header */
 hr{
     background-color: lightgray;
 }
@@ -12,63 +10,98 @@ hr{
     color: lightgray;
     font-size: 18px;
 }
+/* initals */
+.navbar-brand{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 30px;
+    color: #002447 !important;
+}
 /* contact buttons */
 .contact-link{
-    margin: 5px 10px 5px 10px;
+    margin: 5px 20px 5px 20px;
     padding: 0px 5px 0px 5px;
-    color: black;
-    background: none;
-    border: 1px solid black;
-
 }
 .contact-link:hover{
-    border: 1px solid salmon;
+    text-emphasis: none;
 }
+/* jumbortron */
 .jumbotron{
-    background: black;
+    /* background-image: url(/assets/images/topography.png); */
+    background-color: #FBECEB;
     margin-top: 5px;
     margin-bottom: 0;
 }
 /* jumbotron header */
 #jumbo-header{
     font-family: 'Paytone One', sans-serif;
-    color:white;
+    color: #002447;
+
+}
+.hello{
+    font-size: 100px;
+    text-shadow: #53D3D1 2px 2px;
 }
 /* jumbotron text */
 .lead{
-    color: white;
+    color: #002447;
 }
+/* portfolio filer bar */
 .portfolio-filter{
     margin: 5px 0 5px 0;
-    background-color: fuchsia;
+    background-color: #53D3D1;
     padding: 10px;
 }
 .filter-icon{
     color: white;
 }
-.card{
+.filter-icon:hover{
+    color: #002447;
+}
+/* main container */
+.main{
+    background-color: #FEB249;
+    padding: 40px;
+}
+/* cards for every project */
+.img-thumbnail{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+.img-thumbnail:hover .middle{
+    opacity: 1;
+}
+.middle{
+    transition: .5 ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     text-align: center;
+}
+.card{
+    border-radius: 0;
+    text-align: center;
+}
+.card-img-top{
+    border-radius: 0;
 }
 .card-title{
     /* font-family: 'Paytone One', sans-serif; */
     font-family: 'Fugaz One', cursive;
-    color: salmon;
     font-size: 24px;
 }
 .card-title:hover{
-    font-size: 26px;
+    text-decoration: none;
 }
 a{
     text-decoration: none !important;
 }
 .github-link{
     margin-bottom: 6px;
-    color: rgb(92, 91, 91);
-    background: none;
-    border: 1px solid rgb(92, 91, 91);
 }
 .github-link:hover{
-    border: 1px solid salmon;
+    text-emphasis: none;
 }
 .icon{
     padding: 0px 10px 20px 10px;
