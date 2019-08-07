@@ -45,6 +45,14 @@ hr{
 .lead{
     color: #002447;
 }
+.left{
+    background-color: #FEB249;
+    float: right;
+    height: 248px;
+    width: 124px;
+    border-bottom-left-radius: 248px;
+    border-top-left-radius: 248px;
+}
 /* portfolio filer bar */
 .portfolio-filter{
     margin: 5px 0 5px 0;
