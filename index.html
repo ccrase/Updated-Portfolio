@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--Google Fonts CDN-->
-    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Paytone+One|Quattrocento+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900|Paytone+One|Quattrocento+Sans|Work+Sans:300&display=swap" rel="stylesheet">
+
+    <!--fontawesome kit-->
+    <script src="https://kit.fontawesome.com/e6979a7c66.js"></script>
 
     <!--external stylesheet-->
     <link rel="stylesheet" href="assets/style.css">
@@ -18,38 +21,45 @@
   </head>
   <body>
     <!--NAVBAR-->  
-      <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">CC</span>
-
+      <nav class="navbar navbar-light bg-light fixed-top">
+          <a href="index.html"><span class="navbar-brand mb-0 h1">CC</span></a>
+        
         <ul class="nav justify-content-center">
           <li class="nav-item contact">
-            <a class="nav-link" href="#">Phone</a>
+              <a class="btn btn-primary" href="#" role="button">Phone</a>
           </li>
           <li class="nav-item contact">
-            <a href="https://www.linkedin.com/in/callicrase/"><button class="contact-link">LinkedIn</button></a><br>
+              <a class="btn btn-primary" href="https://www.linkedin.com/in/callicrase/" role="button">LinkedIn</a>
           </li>
           <li class="nav-item contact">
-            <a href="assets/images/CalliCrase_DevelopmentResume.pdf"><button class="contact-link">Resume</button></a><br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resumeModal">
+                Resume
+                </button>
           </li>
           <li class="nav-item contact">
-            <a href="https://github.com/ccrase"><button class="contact-link">GitHub</button></a>
+              <a class="btn btn-primary" href="https://github.com/ccrase" role="button">GitHub</a>
+          </li>
+          <li class="nav-item contact">
+              <a class="btn btn-primary" href="contact.html" role="button">Contact</a>
           </li>
         </ul>
-      </nav>       
+      </nav>      
+      <br>
+      <br> 
 
       <!--JUMBOTRON-->
     <div class="jumbotron jumbotron-fluid shadow-sm">
         
         <div class="container">
-          <div class="left"></div>
-          <h1 class="display-4" id="jumbo-header"><span class="hello">Hello,</span> I'm Calli Crase. </h1>
-          <p class="lead">Full-Stack Developer with high attention to detail and a customer focused background. Most comfortable programming in JavaScript and Node.js. Succeeds in a stimulating, collaborative and challenging environment. Passionate about creating value for both the business and end-user. Aspiring mentor to young girls who are curious about programming.</p>
-          
+          <div class="semicircle"></div>
+          <h1 class="display-4" id="jumbo-header"><span class="hello">Hello,</span> I'm Calli. </h1>
+          <p class="lead">pretty darn creative, burger lovin', Developer.</p>
+          <div class="rectangle"></div>
         </div>
       </div>
 
     <!--FILTER FOR PORTFOLIO-->
-      <div class="portfolio-filter">
+      <!-- <div class="portfolio-filter">
         <ul class="nav justify-content-center">
           <li class="nav-item">
             <a class="nav-link filter-icon" href="#">All Projects</a>
@@ -64,128 +74,179 @@
             <a class="nav-link filter-icon" href="#">Python</a>
           </li>
         </ul>
-      </div>  
+      </div>   -->
 
-    <!--GRID-->
+    <!--containter-->
     <div class="container shadow-sm main">
-            <div class="row">
-                <!--ROW 1-->
-              <div class="col-sm">
-                
 
-                  <img src="/assets/images/alphabetgame2.PNG" alt="..." class="img-thumbnail">
-                  <div class ="middle"><a href="https://kyleruff1.github.io/WDJSChildrensBook/"><h5 class="card-title">Alphabet Game</h5></a>
-                  <a href="https://github.com/kyleruff1/WDJSChildrensBook"><button class="github-link">GitHub Link</button></a></div>
-
-                  <!--IMAGE CARD-->
-                  <div class="card mb-3">
-                    <a href="https://kyleruff1.github.io/WDJSChildrensBook/"><img src="assets/images/alphabet-game.PNG" class="card-img-top" alt="project 1"></a>
-                        <div class="card-body">
-                          <!-- <a href="https://kyleruff1.github.io/WDJSChildrensBook/"><h5 class="card-title">Alphabet Game</h5></a>
-                          <hr>
-                          <p class="card-text">A simple and fun alphabet learning game using Merriam Webster and Giphy API. Won the award for "Most Creative".</p>
-                          <a href="https://github.com/kyleruff1/WDJSChildrensBook"><button class="github-link">GitHub Link</button></a> -->
-                          <p class="card-text"><small class="text-muted">Created July 6, 2019</small></p>
-                        </div>
-                      </div>
-
-                    <div class="card mb-3">
-                      <a href="https://ccrase.github.io/Train-Time/"><img src="assets/images/train-assignment.PNG" class="card-img-top" alt="train times"></a>
-                            <div class="card-body">
-                              <a href="https://ccrase.github.io/Train-Time/"><h5 class="card-title">Train Scheduler</h5></a>
-                              <hr>
-                              <p class="card-text">A Simple train scheuduler using Firebase and the moment.js library. </p>
-                              <a href="https://github.com/ccrase/Train-Time"><button class="github-link">GitHub Link</button></a>
-                              <p class="card-text"><small class="text-muted">Created June 26, 2019</small></p>
-                            </div>
-                          </div>
-              </div>
-              <!--ROW 2-->
-              <div class="col-sm">
-
-                  <img src="/assets/images/giftastic2.PNG" alt="..." class="img-thumbnail">
-
-                <!--IMAGE CARD-->
-                <div class="card mb-3">
-                  <a href="https://ccrase.github.io/Gif-Tastic/"><img src="assets/images/gif-tastic.PNG" class="card-img-top" alt="gif-tastic"></a>
-                  <div class="card-body">
-                    <a href="https://ccrase.github.io/Gif-Tastic/"><h5 class="card-title">Gif Tastic</h5></a>
-                    <hr>
-                    <p class="card-text">Used GIPHY API to generate gifs for individual button clicks.</p>
-                    <a href="https://github.com/ccrase/Gif-Tastic"><button class="github-link">GitHub Link</button></a>
-                    <p class="card-text"><small class="text-muted">Created June 20, 2019</small></p>
-                  </div>
+      <!--alphabet game-->
+      <div class="card">
+          <div class="row">
+              <div class="col-sm-8">
+                <div class="card-body">
+                    <br>
+                    <p class="card-text"><small class="text-muted">Created July 6, 2019</small></p>
+                    <a href="https://kyleruff1.github.io/WDJSChildrensBook/"><h5 class="card-title">An Alphabet Learning Game</h5></a>
+                    <p class="card-text">A simple and fun alphabet learning game using Merriam Webster and Giphy API. Won the award for "Most Creative".</p>
+                    <a href="https://github.com/kyleruff1/WDJSChildrensBook" class="btn btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right"></i></a>
                 </div>
-
-                <div class="card mb-3">
-                  <a href="https://ccrase.github.io/Unit-4-Game/"><img src="assets/images/crystal.PNG" class="card-img-top" alt="crystal game"></a>
-                    <div class="card-body">
-                        <a href="https://ccrase.github.io/Unit-4-Game/"><h5 class="card-title">Crystal Collector</h5></a>
-                        <hr>
-                        <p class="card-text">A game of guessing. Click on each crystal to match the desired number.</p>
-                        <a href="https://github.com/ccrase/Unit-4-Game"><button class="github-link">GitHub Link</button></a>
-                        <p class="card-text"><small class="text-muted">Created June 5, 2019</small></p>
-                    </div>
-                    </div>
               </div>
-              <!--ROW 3-->
-              <div class="col-sm">
-                <!--IMAGE CARD-->
-                <div class="card mb-3">
-                  <a href="https://github.com/ccrase/Liri-Node-App"><img src="assets/images/liri-node-app.PNG" class="card-img-top" alt="liri node.js app"></a>
-                    <div class="card-body">
-                        <a href="https://github.com/ccrase/Liri-Node-App"><h5 class="card-title">LIRI</h5></a>
-                        <hr>
-                        <p class="card-text">First node.js application using Spotify, OMDB, and Bands in Town APIs.</p>
-                        <a href="https://github.com/ccrase/Liri-Node-App"><button class="github-link">GitHub Link</button></a>
-                        <p class="card-text"><small class="text-muted">Created July 20, 2019</small></p>
-                    </div>
-                    </div>
-                    
-                <!-- <div class="card mb-3">
-                  <a href="https://ccrase.github.io/Responsive_Portfolio/index.html"><img src="assets/images/portfolio.PNG" class="card-img-top" alt="portfolio"></a>
-                  <div class="card-body">
-                      <a href="https://ccrase.github.io/Responsive_Portfolio/index.html"><h5 class="card-title">Trial Portfolio</h5></a>
-                      <p class="card-text">A first try portfolio using bootstrap and responsive breakpoints.</p>
-                      <a href="https://github.com/ccrase/Responsive_Portfolio"><button class="github-link">GitHub Link</button></a>
-                      <p class="card-text"><small class="text-muted">Created May 17, 2019</small></p>
-                  </div>
-                  </div> -->
 
-
-                <div class="card mb-3">
-                  <a href="https://ccrase.github.io/Word-Guess-Game/"><img src="assets/images/hangman.PNG" class="card-img-top" alt="food hangman"></a>
-                    <div class="card-body">
-                        <a href="https://ccrase.github.io/Word-Guess-Game/"><h5 class="card-title">Hangman</h5></a>
-                        <hr>
-                        <p class="card-text">A food themed hangman.</p>
-                        <a href="https://github.com/ccrase/Word-Guess-Game"><button class="github-link">GitHub Link</button></a>
-                        <p class="card-text"><small class="text-muted">Created May 29, 2019</small></p>
-                    </div>
-                    </div>
+              <div class="col-sm-4">
+                  <img src="/assets/images/alphabet-full-finished.png" alt="..." class="img-thumbnail">
               </div>
-            </div>
           </div>
-          <br>
-          <br>
+      </div>
+      <hr>
+      
+      <!--gif tastic-->
+      <div class="card">
+          <div class="row">
+              <div class="col-sm-8">
+                <div class="card-body">
+                    <br>
+                    <p class="card-text"><small class="text-muted">Created June 20, 2019</small></p>
+                    <a href="https://ccrase.github.io/Gif-Tastic/"><h5 class="card-title">Gif Tastic</h5></a>
+                    <p class="card-text">Used GIPHY API to generate gifs for individual button clicks.</p>
+                    <a href="https://github.com/ccrase/Gif-Tastic" class="btn btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right"></i></a>
+                </div>
+              </div>
 
+              <div class="col-sm-4">
+                  <img src="/assets/images/giftastic-full-finished.png" alt="..." class="img-thumbnail">
+              </div>
+          </div>
+      </div> 
+      <hr>
+      
+      <!--liri-->
+      <div class="card">
+          <div class="row">
+              <div class="col-sm-8">
+                <div class="card-body">
+                    <br>
+                    <p class="card-text"><small class="text-muted">Created July 20, 2019</small></p>
+                    <a href="https://github.com/ccrase/Liri-Node-App"><h5 class="card-title">LIRI CLI</h5></a>
+                    <p class="card-text">First node.js application using Spotify, OMDB, and Bands in Town APIs.</p>
+                    <a href="https://github.com/ccrase/Liri-Node-App" class="btn btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right"></i></a>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                  <img src="assets/images/liri-full-finished.png" alt="..." class="img-thumbnail">
+              </div>
+          </div>
+      </div> 
+      <hr>
+
+
+      <!--train time-->
+      <div class="card">
+          <div class="row">
+              <div class="col-sm-8">
+                <div class="card-body">
+                    <br>
+                    <p class="card-text"><small class="text-muted">Created June 26, 2019</small></p>
+                    <a href="https://ccrase.github.io/Train-Time/"><h5 class="card-title">Train Time</h5></a>
+                    <p class="card-text">A Simple train scheuduler using Firebase and the moment.js library.</p>
+                    <a href="https://github.com/ccrase/Train-Time" class="btn btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right"></i></a>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                  <img src="assets/images/train-full-finished.png" alt="..." class="img-thumbnail">
+              </div>
+          </div>
+      </div> 
+      <hr>
+
+      <!--crystal game-->
+      <div class="card">
+          <div class="row">
+              <div class="col-sm-8">
+                <div class="card-body">
+                    <br>
+                    <p class="card-text"><small class="text-muted">Created June 5, 2019</small></p>
+                    <a href="https://ccrase.github.io/Unit-4-Game/"><h5 class="card-title">Crystal Collector</h5></a>
+                    <p class="card-text">A game of guessing. Click on each crystal to match the desired number.</p>
+                    <a href="https://github.com/ccrase/Unit-4-Game" class="btn btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right"></i></a>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                  <img src="assets/images/crystal-full-finished.png" alt="..." class="img-thumbnail">
+              </div>
+          </div>
+      </div> 
+      <hr>
+
+      <!--hangman game-->
+      <div class="card">
+          <div class="row">
+              <div class="col-sm-8">
+                <div class="card-body">
+                    <br>
+                    <p class="card-text"><small class="text-muted">Created May 29, 2019</small></p>
+                    <a href="https://ccrase.github.io/Word-Guess-Game/"><h5 class="card-title">Hangman</h5></a>
+                    <p class="card-text">A food themed hangman.</p>
+                    <a href="hhttps://github.com/ccrase/Word-Guess-Game" class="btn btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right"></i></a>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                  <img src="assets/images/hangman-full-finished.png" alt="..." class="img-thumbnail">
+              </div>
+          </div>
+      </div> 
+<!--end containter-->
+  </div>    
+          <br>
+          <br>
 
 
 
     <!--FOOTER-->
     <div class="card">
-            <div class="card-header">
+            <div class="card-header" id="footer-header">
               
             </div>
             <div class="card-body" id="footer-body">
               <blockquote class="blockquote mb-0">
                 <!-- <p>Too freaky for the squares, too square for the freakies.</p>
                 <footer class="blockquote-footer">Unkonwn<cite title="Source Title"> not sure</cite></footer> -->
-                <img src="./assets/images/phone.png" alt="phone" class="icon"><img src="./assets/images/mail.png" alt="email" class="icon"><img src="./assets/images/github.png" alt="github" class="icon"><img src="./assets/images/linkedin.png" alt="linkedin" class="icon">
+                <i class="fab fa-github icon"></i><i class="fab fa-linkedin-in icon"></i><i class="fas fa-phone icon"></i><i class="fas fa-envelope icon"></i>
                 <p>Created by Calli Crase.</p>
               </blockquote>
             </div>
-          </div>
+    </div>
+
+
+
+
+
+          <!--MODAL for RESUME-->
+          <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeTitleCenter" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resumeTitle">Resume</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="/assets/images/resume-pic.PNG" alt="resume">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="contact.html"><button type="button" class="btn btn-primary">Contact</button></a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
