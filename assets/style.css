@@ -175,3 +175,13 @@ input{
 input:focus{
     outline-width: 0;
 }
+
+/* modal styling */
+.modal{
+    text-align: center;
+    overflow: auto;
+}
+.modal-dialog{
+    width: auto;
+    margin: 20px auto;
+}
