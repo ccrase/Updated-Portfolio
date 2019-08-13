@@ -124,8 +124,10 @@ margin: 0 15px 0 15px;
     color: #2D2A32;
     text-decoration: none;
 }
+
 /* portfolio buttons */
-.btn-sm{
+.github-link{
+    color: #2D2A32;
 }
 
 /* bottom footer */
@@ -165,10 +167,10 @@ blockquote{
 }
 form{
     padding: 20px;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
 }
 input{
-    background-color: lightgray;
+    /* background-color: lightgray; */
     width: 100%;
     border: none;
 }
@@ -181,7 +183,7 @@ input:focus{
     text-align: center;
     overflow: auto;
 }
-.modal-dialog{
+/* .modal-dialog{
     width: auto;
     margin: 20px auto;
-}
+} */
