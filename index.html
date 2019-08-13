@@ -21,29 +21,37 @@
   </head>
   <body>
     <!--NAVBAR-->  
-      <nav class="navbar navbar-light bg-light fixed-top">
-          <a href="index.html"><span class="navbar-brand mb-0 h1">CC</span></a>
-        
-        <ul class="nav justify-content-center">
-          <li class="nav-item contact">
-              <a class="btn btn-link link" href="https://www.linkedin.com/in/callicrase/" role="button">LinkedIn</a>
-          </li>
-          <li class="nav-item contact">
-              <button type="button" class="btn btn-link link" data-toggle="modal" data-target="#resumeModal">
-                Resume
-                </button>
-          </li>
-          <li class="nav-item contact">
-              <a class="btn btn-link link" href="https://github.com/ccrase" role="button">GitHub</a>
-          </li>
-          <li class="nav-item contact">
-              <a class="btn btn-link link" href="about.html" role="button">About</a>
-          </li>
-          <li class="nav-item contact">
-              <a class="btn btn-link link" href="contact.html" role="button">Contact</a>
-          </li>
-        </ul>
-      </nav>      
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <a href="index.html"><span class="navbar-brand mb-0 h1">CC</span></a>
+      
+      <ul class="nav justify-content-center">
+        <li class="nav-item contact">
+            <a class="btn btn-link link" href="index.html" role="button">Projects</a>
+        </li>
+
+        <!-- <li class="nav-item contact">
+            <a class="btn btn-link link" href="https://www.linkedin.com/in/callicrase/" role="button">LinkedIn</a>
+        </li> -->
+
+        <li class="nav-item contact">
+            <button type="button" class="btn btn-link link" data-toggle="modal" data-target="#resumeModal">
+              Resume
+              </button>
+        </li>
+
+        <!-- <li class="nav-item contact">
+            <a class="btn btn-link link" href="https://github.com/ccrase" role="button">GitHub</a>
+        </li> -->
+
+        <li class="nav-item contact">
+                <a class="btn btn-link link" href="about.html" role="button">About</a>
+        </li>
+
+        <li class="nav-item contact">
+            <a class="btn btn-link link" href="contact.html" role="button">Contact</a>
+        </li>
+      </ul>
+    </nav>       
       <br>
       <br> 
 
@@ -53,7 +61,7 @@
         <div class="container">
           <div class="semicircle"></div>
           <h1 class="display-4" id="jumbo-header"><span class="hello">Hello,</span> I'm Calli. </h1>
-          <p class="lead">pretty darn creative.</p>
+          <p class="lead">some text about me</p>
           <div class="rectangle"></div>
         </div>
       </div>
@@ -84,11 +92,13 @@
               <div class="col-sm-8">
                 <div class="card-body">
                     <br>
-                    <p class="card-text"><small class="text-muted">Created August 12, 2019</small></p>
-                    <a href="https://friend-finder-surveyapp.herokuapp.com/"><h5 class="card-title">Friend Finder</h5></a>
-                    <p class="card-text">Fill out this survey to be matched with your next bff.</p>
+                    <!-- <p class="card-text"><small class="text-muted">Created August 12, 2019</small></p> -->
+                    <h5 class="card-title">Friend Finder</h5>
+                    <p class="card-text">Compatibility based "Friend Finder" application that compares user's survey answers with those of others. The app then displays the name and picture of the best overall match.</p>
+                    <h5 class="technologies-title">technologies</h5>
+                    <p class ="card-text technologies">Express.js to handle routing. Deployed to Heroku. JavaScript and jQuery for DOM manipulation.</p>
                     <br>
-                    <a href="https://github.com/ccrase/Friend-Finder" class="btn-sm btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right port-link"></i></a>
+                    <a href="https://friend-finder-surveyapp.herokuapp.com/"><img src="/assets/images/export.png" class="card-link"></a> <a href="https://github.com/ccrase/Friend-Finder"><img src="/assets/images/heroku.png" class="card-link"></a>                
                 </div>
               </div>
               <div class="col-sm-4">
@@ -96,7 +106,29 @@
               </div>
           </div>
       </div>
-      <hr>      
+      <hr>
+
+      <!--Amazon CLI-->
+      <div class="card">
+        <div class="row">
+            <div class="col-sm-8">
+              <div class="card-body">
+                  <br>
+                  <!-- <p class="card-text"><small class="text-muted">Created August 12, 2019</small></p> -->
+                  <h5 class="card-title">Amazon CLI</h5>
+                  <p class="card-text">Amazon-like storefrom CLI using MySQL to store and manipulate data. The app takes in orders from the customer and depletes stock from the stores inventory. The app allows managers and supervisors to track product sales across the stores departments, purchase new inventory and add new products and departments.</p>
+                  <h5 class="technologies-title">technologies</h5>
+                  <p class ="card-text technologies">Node.js, MySQL, inquirer</p>
+                  <br>
+                  <a href="https://github.com/ccrase/Amazon-CLIapp"><img src="/assets/images/github.png" class="card-link"></a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="/assets/images/amazon-full-finished.jpg" alt="..." class="img-thumbnail">
+            </div>
+        </div>
+    </div>
+    <hr>            
 
       <!--alphabet game-->
       <div class="card">
@@ -104,12 +136,14 @@
               <div class="col-sm-8">
                 <div class="card-body">
                     <br>
-                    <p class="card-text"><small class="text-muted">Created July 6, 2019</small></p>
-                    <a href="https://kyleruff1.github.io/WDJSChildrensBook/"><h5 class="card-title">An Alphabet Learning Game</h5></a>
-                    <p class="card-text">A simple and fun alphabet learning game using Merriam Webster and Giphy API. Won the award for "Most Creative".</p>
+                    <!-- <p class="card-text"><small class="text-muted">Created July 6, 2019</small></p> -->
+                    <h5 class="card-title">An Alphabet Learning Game</h5>
+                    <p class="card-text">A simple and fun alphabet learning game. Won an Award for "Most Creative".</p>
+                    <h5 class="technologies-title">technologies</h5>
+                    <p class ="card-text technologies">Firebase storeage for user data. GIPHY, Merriam Webster API. Javascript and jQuery for DOM manipulation.</p>
                     <br>
-                    <a href="https://github.com/kyleruff1/WDJSChildrensBook" class="btn-sm btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right port-link"></i></a>
-                </div>
+                    <a href="https://ccrase.github.io/Alphabet-Game/"><img src="/assets/images/export.png" class="card-link"></a> <a href="https://github.com/ccrase/Alphabet-Game"><img src="/assets/images/github.png" class="card-link"></a>                
+                  </div>
               </div>
               <div class="col-sm-4">
                   <img src="assets/images/alphabet-full-finished.png" alt="..." class="img-thumbnail">
@@ -124,12 +158,14 @@
               <div class="col-sm-8">
                 <div class="card-body">
                     <br>
-                    <p class="card-text"><small class="text-muted">Created June 20, 2019</small></p>
-                    <a href="https://ccrase.github.io/Gif-Tastic/"><h5 class="card-title">Gif Tastic</h5></a>
+                    <!-- <p class="card-text"><small class="text-muted">Created June 20, 2019</small></p> -->
+                    <h5 class="card-title">Gif Tastic</h5>
                     <p class="card-text">Used GIPHY API to generate gifs for individual button clicks.</p>
+                    <h5 class="technologies-title">technologies</h5>
+                    <p class ="card-text technologies">HTML, CSS, JavaScript, jQuery, GIPHY API.</p>
                     <br>
-                    <a href="https://github.com/ccrase/Gif-Tastic" class="btn-sm btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right port-link"></i></a>
-                </div>
+                    <a href="https://ccrase.github.io/Gif-Tastic/"><img src="/assets/images/export.png" class="card-link"></a> <a href="https://github.com/ccrase/Gif-Tastic"><img src="/assets/images/github.png" class="card-link"></a>                
+                  </div>
               </div>
 
               <div class="col-sm-4">
@@ -145,12 +181,15 @@
               <div class="col-sm-8">
                 <div class="card-body">
                     <br>
-                    <p class="card-text"><small class="text-muted">Created July 20, 2019</small></p>
-                    <a href="https://github.com/ccrase/Liri-Node-App"><h5 class="card-title">LIRI CLI</h5></a>
-                    <p class="card-text">First node.js application using Spotify, OMDB, and Bands in Town APIs.</p>
+                    <!-- <p class="card-text"><small class="text-muted">Created July 20, 2019</small></p> -->
+                    <h5 class="card-title">LIRI CLI</h5>
+                    <p class="card-text">This CLI app uses API data to interpret user parameters and return related data.</p>
+                    <h5 class="technologies-title">technologies</h5>
+                    <p class ="card-text technologies">Node.js using inquirer to capture user input. Axios to access Bands-in-Town, Spotify and OMDB APIs. Moment.js for date/time manipulation. DotEnv to secure API data.</p>
                     <br>
-                    <a href="https://github.com/ccrase/Liri-Node-App" class="btn-sm btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right port-link"></i></a>
-                </div>
+                    <a href="https://github.com/ccrase/Liri-Node-App"><img src="/assets/images/github.png" class="card-link"></a>
+                
+                  </div>
               </div>
 
               <div class="col-sm-4">
@@ -167,12 +206,14 @@
               <div class="col-sm-8">
                 <div class="card-body">
                     <br>
-                    <p class="card-text"><small class="text-muted">Created June 26, 2019</small></p>
-                    <a href="https://ccrase.github.io/Train-Time/"><h5 class="card-title">Train Time</h5></a>
+                    <!-- <p class="card-text"><small class="text-muted">Created June 26, 2019</small></p> -->
+                    <h5 class="card-title">Train Time</h5>
                     <p class="card-text">A Simple train scheuduler using Firebase and the moment.js library.</p>
+                    <h5 class="technologies-title">technologies</h5>
+                    <p class ="card-text technologies">Firebase for data storage, Moment.js for time manipulation, JavaScript and jQuery for HTML manipulation.</p>
                     <br>
-                    <a href="https://github.com/ccrase/Train-Time" class="btn-sm btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right port-link"></i></a>
-                </div>
+                    <a href="https://ccrase.github.io/Train-Time/"><img src="/assets/images/export.png" class="card-link"></a> <a href="https://github.com/ccrase/Train-Time"><img src="/assets/images/github.png" class="card-link"></a>
+                  </div>
               </div>
 
               <div class="col-sm-4">
@@ -188,16 +229,18 @@
               <div class="col-sm-8">
                 <div class="card-body">
                     <br>
-                    <p class="card-text"><small class="text-muted">Created June 5, 2019</small></p>
-                    <a href="https://ccrase.github.io/Unit-4-Game/"><h5 class="card-title">Crystal Collector</h5></a>
+                    <!-- <p class="card-text"><small class="text-muted">Created June 5, 2019</small></p> -->
+                    <h4 class="card-title">Crystal Collector</h4>
                     <p class="card-text">A game of guessing. Click on each crystal to match the desired number.</p>
+                    <h5 class="technologies-title">technologies</h5>
+                    <p class ="card-text technologies">HTML, CSS, JavaScript and jQuery</p>
                     <br>
-                    <a href="https://github.com/ccrase/Unit-4-Game" class="btn-sm btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right port-link"></i></a>
+                    <a href="https://ccrase.github.io/Unit-4-Game/"><img src="/assets/images/export.png" class="card-link"></a> <a href="https://github.com/ccrase/Unit-4-Game"><img src="/assets/images/github.png" class="card-link"></a>
                 </div>
               </div>
 
               <div class="col-sm-4">
-                  <img src="assets/images/crystal-full-finished.png" alt="..." class="img-thumbnail">
+                  <img src="assets/images/crystal-full-finished.png" alt="crystal game" class="img-thumbnail">
               </div>
           </div>
       </div> 
@@ -209,16 +252,18 @@
               <div class="col-sm-8">
                 <div class="card-body">
                     <br>
-                    <p class="card-text"><small class="text-muted">Created May 29, 2019</small></p>
-                    <a href="https://ccrase.github.io/Word-Guess-Game/"><h5 class="card-title">Hangman</h5></a>
+                    <!-- <p class="card-text"><small class="text-muted">Created May 29, 2019</small></p> -->
+                    <h4 class="card-title">Hangman</h4>
                     <p class="card-text">A food themed hangman.</p>
+                    <h5 class="technologies-title">technologies</h5>
+                    <p class ="card-text technologies">The app dynamically updates HTML and CSS, which is powered by Javascript.</p>
                     <br>
-                    <a href="hhttps://github.com/ccrase/Word-Guess-Game" class="btn-sm btn-primary shadow p-3">Take a Look <i class="fas fa-angle-double-right port-link"></i></a>
+                   <a href="https://ccrase.github.io/Word-Guess-Game/"><img src="/assets/images/export.png" class="card-link"></a> <a href="https://github.com/ccrase/Word-Guess-Game "><img src="/assets/images/github.png" class="card-link"></a>
                 </div>
               </div>
 
               <div class="col-sm-4">
-                  <img src="assets/images/hangman-full-finished.png" alt="..." class="img-thumbnail">
+                  <img src="assets/images/hangman-full-finished.png" alt="hangman" class="img-thumbnail">
               </div>
           </div>
           <br>

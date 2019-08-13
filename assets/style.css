@@ -1,7 +1,7 @@
 body{
     background-image: url(/assets/images/topography.png);
     font-family: 'Quattrocento Sans', sans-serif;
-    color: #2D2A32;
+
 }
 /* contact header */
 
@@ -9,14 +9,14 @@ hr{
     background-color: lightgray;
 }
 .contact-info{
-    color: lightgray;
+
     font-size: 18px;
 }
 /* initals */
 .navbar-brand{
     font-family: 'Paytone One', sans-serif;
     font-size: 30px;
-    color: #002447 !important;
+
 }
 /* contact buttons */
 
@@ -25,62 +25,55 @@ hr{
 }
 /* jumbortron */
 .jumbotron{
-    /* background-image: url(/assets/images/topography.png); */
-    background-color: #FBECEB;
-
     margin-bottom: 0;
+    background-image: url(/assets/images/yellowtexture.png)
+    
 }
 /* jumbotron header */
 #jumbo-header{
-    color: #002447;
     font-weight: bolder;
+    color:#403D58;
 }
 .hello{
     font-size: 100px;
     font-family: 'Paytone One', sans-serif;
-    text-shadow:#85D6CB 3px 3px;
+    /* text-shadow: fuchsia 3px 3px; */
 }
 /* jumbotron text */
 .lead{
-    color: #002447;
 }
-.semicircle{
+/* .semicircle{
     background-color: #FEB249;
     float: right;
     height: 200px;
     width: 100px;
     border-bottom-left-radius: 200px;
     border-top-left-radius: 200px;
-}
+} */
 .rectangle{
     height: 10px;
     width: 430px;
     float: left;
-    background-color: #002447;
+    background-color: black;
 }
 /* portfolio filer bar */
 .portfolio-filter{
     margin: 5px 0 5px 0;
-    /* background-color: #73D6CC; */
-    background-color:#85D6CB;
     padding: 10px;
 }
 .filter-icon{
-    color: white;
 }
 .filter-icon:hover{
-    color: #2D2A32;
 }
 /* main container */
 .main{
-    /* background-color: #FEB249; */
-    background-color: white;
     padding: 10px;
     margin-top: 10px;
 }
 /* cards for every project */
 .card{
     border: none;
+  
 }
 .img-thumbnail{
     border: none;
@@ -93,9 +86,13 @@ hr{
 }
 /* title of card */
 .card-title{
-    color: #2D2A32;
     font-size: 30px;
     font-family: 'Lato', sans-serif;
+}
+/* github/export/heroku links */
+.card-link{
+    padding-right: 20px;
+    width: 60px;
 }
 
 a:hover{
@@ -103,14 +100,10 @@ a:hover{
 }
 /* buttons */
 .btn-primary{
-    /* background-color: #21A0A0 !important; */
-    border: #23a8a8;
-    background-image: radial-gradient(#2abdbd, #24abab,#23a8a8);
     font-size: 16px;
 }
 /* link buttons */
 .link{
-color: #2D2A32;
 background-color: none;
 margin: 0 15px 0 15px;
 }
@@ -121,13 +114,11 @@ margin: 0 15px 0 15px;
 }
 .link:hover{
     font-weight: bold;
-    color: #2D2A32;
     text-decoration: none;
 }
 
 /* portfolio buttons */
 .github-link{
-    color: #2D2A32;
 }
 
 /* bottom footer */
@@ -135,25 +126,28 @@ margin: 0 15px 0 15px;
     text-align: center;
 }
 #footer-header{
-    background-color: #FBECEB;
     border-top: 1px solid lightgray;
 }
 blockquote{
-    color: #002447;
     text-transform: uppercase;
     font-family: 'Work Sans', sans-serif;
 }
 .created-by{
     font-size: 12px;
 }
+.technologies-title{
+    text-decoration: underline;
+}
 /* icons */
 .icon{
     padding: 0px 10px 20px 10px;
-    color: #2D2A32;
     size: 50px;
 }
 
 /* form */
+
+.contact-container{
+}
 .form-title{
     text-align: center;
     text-transform: uppercase;
@@ -167,13 +161,14 @@ blockquote{
 }
 form{
     padding: 20px;
-    /* background-color: lightgrey; */
 }
 input{
-    /* background-color: lightgray; */
     width: 100%;
     border: none;
 }
+::placeholder{
+}
+
 input:focus{
     outline-width: 0;
 }
@@ -183,7 +178,3 @@ input:focus{
     text-align: center;
     overflow: auto;
 }
-/* .modal-dialog{
-    width: auto;
-    margin: 20px auto;
-} */
