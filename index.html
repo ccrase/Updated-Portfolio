@@ -14,6 +14,9 @@
     <!--fontawesome kit-->
     <script src="https://kit.fontawesome.com/e6979a7c66.js"></script>
 
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <!--external stylesheet-->
     <link rel="stylesheet" href="assets/style.css">
 
@@ -85,9 +88,9 @@
       </div>   -->
 
     <!--containter-->
-    <div class="container shadow-sm main">
+    <div class="container main  scroll-animations">
       <!--friend matcher-->
-      <div class="card">
+      <div class="card animated">
           <div class="row">
               <div class="col-sm-8">
                 <div class="card-body">
@@ -109,7 +112,7 @@
       <hr>
 
       <!--Amazon CLI-->
-      <div class="card">
+      <div class="card animated">
         <div class="row">
             <div class="col-sm-8">
               <div class="card-body">
@@ -131,7 +134,7 @@
     <hr>            
 
       <!--alphabet game-->
-      <div class="card">
+      <div class="card animated">
           <div class="row">
               <div class="col-sm-8">
                 <div class="card-body">
@@ -153,7 +156,7 @@
       <hr>
       
       <!--gif tastic-->
-      <div class="card">
+      <div class="card animated">
           <div class="row">
               <div class="col-sm-8">
                 <div class="card-body">
@@ -176,7 +179,7 @@
       <hr>
       
       <!--liri-->
-      <div class="card">
+      <div class="card animated">
           <div class="row">
               <div class="col-sm-8">
                 <div class="card-body">
@@ -201,7 +204,7 @@
 
 
       <!--train time-->
-      <div class="card">
+      <div class="card animated">
           <div class="row">
               <div class="col-sm-8">
                 <div class="card-body">
@@ -224,7 +227,7 @@
       <hr>
 
       <!--crystal game-->
-      <div class="card">
+      <div class="card animated">
           <div class="row">
               <div class="col-sm-8">
                 <div class="card-body">
@@ -247,7 +250,7 @@
       <hr>
 
       <!--hangman game-->
-      <div class="card">
+      <div class="card animated">
           <div class="row">
               <div class="col-sm-8">
                 <div class="card-body">
@@ -322,5 +325,29 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+          function isScrolledIntoView(elem){
+            //checks to see if element is scrolled into view 
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+
+            var elemTop = $(elem).offset().top;
+            var elemBottom = elemTop + $(elem).height();
+
+            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+          };
+
+          //if element is scrolled into view, fade it in
+          $(window).scroll(function(){
+            $('.scroll-animations .animated').each(function(){
+              if(isScrolledIntoView(this) === true){
+                $(this).addClass('bounceIn');
+              }
+            })
+          })
+      });
+    </script>
   </body>
 </html>

@@ -1,43 +1,58 @@
 body{
-    background-image: url(/assets/images/topography.png);
+    background-image: url(/assets/images/footer_lodyas.png);
+    background-color: #808f85;
     font-family: 'Quattrocento Sans', sans-serif;
-
 }
-/* contact header */
 
+
+
+
+
+/* contact header */
+/* navbar at top */
+.navbar-light{
+    background-color: #3c3c3c !important;
+}
 hr{
-    background-color: lightgray;
+    background-color: #cfd11a;
 }
 .contact-info{
-
     font-size: 18px;
+}
+.btn-link{
+    color: white;
 }
 /* initals */
 .navbar-brand{
     font-family: 'Paytone One', sans-serif;
     font-size: 30px;
-
+    color: white !important;
 }
 /* contact buttons */
 
-.contact-link:hover{
+.btn-link:hover{
     text-emphasis: none;
 }
+
+
+
+
+
 /* jumbortron */
 .jumbotron{
     margin-bottom: 0;
-    background-image: url(/assets/images/yellowtexture.png)
+    /* background-color: #f2e9dc; */
     
 }
 /* jumbotron header */
 #jumbo-header{
     font-weight: bolder;
-    color:#403D58;
+    color: #3c3c3c;
 }
 .hello{
     font-size: 100px;
     font-family: 'Paytone One', sans-serif;
-    /* text-shadow: fuchsia 3px 3px; */
+     text-shadow: #cfd11a 3px 3px; 
 }
 /* jumbotron text */
 .lead{
@@ -51,11 +66,16 @@ hr{
     border-top-left-radius: 200px;
 } */
 .rectangle{
-    height: 10px;
+    height: 3px;
     width: 430px;
     float: left;
-    background-color: black;
+    /* background-color: #91ca99; */
+    background-color: #cfd11a;
 }
+
+
+
+
 /* portfolio filer bar */
 .portfolio-filter{
     margin: 5px 0 5px 0;
@@ -65,19 +85,29 @@ hr{
 }
 .filter-icon:hover{
 }
+
+
+
+
 /* main container */
 .main{
     padding: 10px;
     margin-top: 10px;
+    /* background-color: white; */
+
 }
+
+
+
+
 /* cards for every project */
 .card{
     border: none;
-  
 }
 .img-thumbnail{
     border: none;
-    padding: 10px;
+    padding-top: 30px;
+    padding-right: 30px;
 }
 /* created date on card */
 .text-muted{
@@ -93,6 +123,9 @@ hr{
 .card-link{
     padding-right: 20px;
     width: 60px;
+}
+.card-link:hover{
+    transform: scale(1.2);
 }
 
 a:hover{
@@ -117,16 +150,17 @@ margin: 0 15px 0 15px;
     text-decoration: none;
 }
 
-/* portfolio buttons */
-.github-link{
-}
+
+
+
 
 /* bottom footer */
 #footer-body{
     text-align: center;
 }
 #footer-header{
-    border-top: 1px solid lightgray;
+    border-top: 1px solid #3c3c3c;
+    background-color: #3c3c3c;
 }
 blockquote{
     text-transform: uppercase;
@@ -137,12 +171,18 @@ blockquote{
 }
 .technologies-title{
     text-decoration: underline;
+    text-transform: capitalize;
 }
 /* icons */
 .icon{
     padding: 0px 10px 20px 10px;
     size: 50px;
 }
+
+
+
+
+
 
 /* form */
 
@@ -167,11 +207,17 @@ input{
     border: none;
 }
 ::placeholder{
+    color: #3c3c3c;
 }
 
 input:focus{
     outline-width: 0;
 }
+
+
+
+
+
 
 /* modal styling */
 .modal{
