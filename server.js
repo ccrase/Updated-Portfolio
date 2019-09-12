@@ -25,22 +25,20 @@ app.use(express.json());
 // ROUTES
 // The below points our server to a series of "route" files.
 // ================================================================================
-app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
-});
+app.use(express.static("public"));
 
-app.get("/contact", function (req, res) {
-    res.sendFile(path.join(__dirname, "contact.html"));
-});
+// app.get("/contact", function (req, res) {
+//     res.sendFile(path.join(__dirname, "contact.html"));
+// });
 
-app.get("/about", function (req, res) {
-    res.sendFile(path.join(__dirname, "about.html"));
-});
+// app.get("/about", function (req, res) {
+//     res.sendFile(path.join(__dirname, "about.html"));
+// });
 
-// If no matching route is found default to home
-app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
-});
+// // If no matching route is found default to home
+// app.get("*", function (req, res) {
+//     res.sendFile(path.join(__dirname, "index.html"));
+// });
 
 // =============================================================================
 // LISTENER

@@ -65,6 +65,9 @@ hr{
     height: 3px;
     float: left;
 }
+.title-break{
+    display: none;
+}
 
 #r1{
     width: 430px;
@@ -155,6 +158,11 @@ margin: 0 15px 0 15px;
     text-decoration: none;
 }
 
+@media only screen and (max-width: 770px){
+    .title-break{
+        display: inline;
+    }
+}
 
 
 
